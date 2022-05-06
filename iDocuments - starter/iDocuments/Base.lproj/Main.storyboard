@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QwI-7D-Yac">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iDocuments" customModuleProvider="target" sceneMemberID="viewController">
@@ -351,7 +351,7 @@
                             <constraint firstItem="aTQ-v0-6Vf" firstAttribute="leading" secondItem="l9l-53-gsq" secondAttribute="leading" id="yxR-rJ-Ine"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Fnu-s8-jCj"/>
+                    <tabBarItem key="tabBarItem" title="" image="house" selectedImage="house.fill" catalog="system" id="Fnu-s8-jCj"/>
                     <connections>
                         <outlet property="cardView" destination="5se-59-i8c" id="A0O-cm-mFV"/>
                         <outlet property="copiedTextNotif" destination="SpX-tS-VTD" id="DZY-mK-KEn"/>
@@ -372,14 +372,74 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1201.449275362319" y="91.741071428571431"/>
+            <point key="canvasLocation" x="2111.594202898551" y="91.741071428571431"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="oKw-et-PPm">
+            <objects>
+                <viewController id="QZ4-IV-tRs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NlE-Ek-Wfd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="xJB-yM-80q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="plus.circle" catalog="system" selectedImage="plus.circle.fill" id="0qo-gg-suy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kxP-mP-uyA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2917" y="92"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="v8x-mZ-JEa">
+            <objects>
+                <viewController id="p1v-mV-i39" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cak-Of-t2c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Qaf-uS-4B4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="tintColor" name="iDoxViewColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="person" catalog="system" selectedImage="person.fill" id="OwI-Ie-0mi"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IVM-wS-45z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3680" y="92"/>
+        </scene>
+        <!--Tab Bar View Controller-->
+        <scene sceneID="qyd-48-26Y">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="QwI-7D-Yac" customClass="TabBarViewController" customModule="iDocuments" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D8z-S9-lrJ">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="iDoxViewColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="UDa-4Z-hfF"/>
+                        <segue destination="QZ4-IV-tRs" kind="relationship" relationship="viewControllers" id="HHg-KH-Fdg"/>
+                        <segue destination="p1v-mV-i39" kind="relationship" relationship="viewControllers" id="A4G-XT-KaA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YOC-e5-AHX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2928" y="-753"/>
         </scene>
     </scenes>
     <resources>
         <image name="bolt.heart.fill" catalog="system" width="128" height="109"/>
+        <image name="house" width="128" height="128"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="iBackground" width="1668" height="2388"/>
         <image name="iBackground2" width="2388" height="1668"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
         <image name="studentdesk" catalog="system" width="124" height="128"/>
         <namedColor name="iDoxAccentColor">
             <color red="0.79199999570846558" green="0.53299999237060547" blue="0.67100000381469727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
